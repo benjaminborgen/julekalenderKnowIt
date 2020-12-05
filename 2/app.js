@@ -4,7 +4,6 @@ const { promises } = require("fs");
 const citizens = 5433000;
 const num = '7';
 let deliveroo = [];
-let counter = 0;
 let primeNumber = 0;
 
 function isPrime(num) {
