@@ -10,16 +10,12 @@ function tellIngredienser (ingrediens, pos) {
     for (var j in data) {
         if (data[j].includes(ingrediens)) {
             var start = data[j].indexOf(ingrediens);
-            
             start = start + pos; // Ingredienser
             end = start + 5; // Alle ingredienser på ordrene er femsifret
-            
             n = data[j].substring(start, end);
-
             total = total + parseInt(n);   
         }
     }
-
     return total;
 }
 
